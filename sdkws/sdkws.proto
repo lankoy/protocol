@@ -569,7 +569,10 @@ message ProcessUserCommand {
   string uuid = 4;
   string value = 5;
 }
-
+message ResponsePagination {
+  int32 CurrentPage = 5;
+  int32 ShowNumber = 6;
+}
 message RequestPagination {
   int32 pageNumber = 1;
   int32 showNumber = 2;
